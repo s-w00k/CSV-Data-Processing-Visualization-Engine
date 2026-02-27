@@ -1,0 +1,21 @@
+product,price,rating,instock,review,launch_date
+Hats,£25.99,4,Yes,"Great quality hat!",2024-02-15
+Books,,5,No,"Excellent content",2024-02-15
+Shoes,50.00,3,TRUE,"Comfortable",2024/01/01
+Bags,49.99,5,1,"Perfect for travel",2024-06-10
+Product-1,£19.99,4,No,"Reliable",Sep 20 2024
+Hats,$27.50,4.5,yes,"Repeat customer purchase",2024-03-01
+Shoes,  52.00  ,6,TRUE,"Too expensive but good",2024-01-15
+Bags,not_available,5,TRUE,"Price missing",2024-07-01
+Gloves,-15.00,3,No,"Returned item",-2024-02-10
+Belts,39.99,2,false,"Poor stitching","2024-05-05"
+Wallets,59,4,In Stock,"Nice leather finish",2024-04-18
+Socks,5.99,5,Out of Stock,"Best value!",2024-02-01
+Jackets,129.99,4.2,1,"Premium quality",2024-01-25
+Caps,£18.00, ,Yes,"No rating provided",2024-02-20
+Backpacks,89.50,4.8,TRUE,"Great for school",2024-03-11
+Hats,£25.99,4,Yes,"Duplicate entry",2024-02-15
+Scarves,29.99,three,Yes,"Rating invalid",2024-02-28
+T-Shirts,14.99,4,TRUE,"",2024-06-05
+Shoes,55.00,3.5,0,"Clearance sale",2024-07-15
+Watches,199.99,5,Yes,"Luxury item",2023-12-01
