@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>CSV Upload + Analytics</title>
+  <link rel="stylesheet" href="./styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>CSV Upload + Data Processing</h1>
+      <p class="sub">
+        Upload a CSV → backend validates & cleans → returns analytics → charts render instantly.
+      </p>
+    </header>
+
+    <section class="card">
+      <h2>Upload CSV</h2>
+      <form id="uploadForm">
+        <input id="fileInput" name="file" type="file" accept=".csv" required />
+        <button type="submit">Upload & Analyze</button>
+      </form>
+
+      <div id="status" class="status"></div>
+
+      <details class="help">
+        <summary>Expected CSV columns (required)</summary>
+        <code>product, price, rating, instock, launch_date</code>
+        <p class="note">Optional: <code>review</code></p>
+      </details>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <h2>Summary</h2>
+        <div id="summary"></div>
+      </div>
+
+      <div class="card">
+        <h2>Missing Values</h2>
+        <canvas id="missingChart" height="200"></canvas>
+      </div>
+
+      <div class="card">
+        <h2>Top Products</h2>
+        <canvas id="productChart" height="220"></canvas>
+      </div>
+
+      <div class="card">
+        <h2>Monthly Trend</h2>
+        <canvas id="monthlyChart" height="220"></canvas>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Cleaned Data Preview</h2>
+      <div class="tableWrap">
+        <table id="previewTable">
+          <thead></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
